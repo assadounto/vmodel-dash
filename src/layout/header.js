@@ -1,19 +1,21 @@
 import React from "react";
+import ProfileArea from "../components/ProfileArea";
 
 
 const Header = () => {
   return (
       <div className="header">
-        <div className="header-content">
-          <div className="header-welcome">
-            Welcome {' '}
+     
+          <div className="header-date">
+          Fri, Oct 20 2023 10:30 am
           </div>
-          <div className="header-bell">
-            <span className="header-user">{'ss'}</span>
+          <div >
+          <ProfileArea/>
           </div>
-        </div>
+         
       </div>
   )
 }
 
 export default Header;
+

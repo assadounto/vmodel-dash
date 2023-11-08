@@ -20,10 +20,13 @@ function App() {
             element={
               <AdminLayout>
                 <Routes>
-                   <Route index element={<Dashboard/>} />
-                  {/* <Route path="/vendors" element={<VendorPage/>} />
-                  <Route path="/reviews" element={<ReviewsPage/>} />
-                  <Route path="/users" element={<UsersPage/>} />  */}
+                   <Route path="/dashboard" element={<Dashboard/>}/>
+                  <Route path="/users" element={<h3>userpage coming soon</h3>} />
+                  <Route path="/services" element={<h3>swervices coming soon</h3>} />
+                  <Route path="/bookings" element={<h3>bookings coming soon</h3>} /> 
+                  <Route path="/coupons" element={<h3>coupons coming soon</h3>} /> 
+                  <Route path="/reports" element={<h3>reports coming soon</h3>} /> 
+                  <Route path="/ads" element={<h3>ads coming soon</h3>} /> 
                 </Routes>
               </AdminLayout>
             }

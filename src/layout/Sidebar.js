@@ -11,22 +11,20 @@ import ads from "../assets/svgs/6.svg"
 
 function Sidebar() {
   const navLinks = [
-    { text: 'Dasboard', link: '/admin',logo: dash  },
-    { text: 'Users', link: '/users', logo: users },
-    { text: 'Jobs & Services', link: '/services' , logo: jobs},
-    { text: 'Bookings', link: '/bookings' , logo: bookings },
-    { text: 'Coupons', link: '/coupons', logo: coupons },
-    { text: 'Reports', link: '/reports', logo:report },
-    { text: 'Ads', link: '/ads', logo: ads },
+    { text: 'Dashboard', link: '/admin/dashboard',logo: dash  },
+    { text: 'Users', link: '/admin/users', logo: users },
+    { text: 'Jobs & Services', link: '/admin/services' , logo: jobs},
+    { text: 'Bookings', link: '/admin/bookings' , logo: bookings },
+    { text: 'Coupons', link: '/admin/coupons', logo: coupons },
+    { text: 'Reports', link: '/admin/reports', logo:report },
+    { text: 'Ads', link: '/admin/ads', logo: ads },
   ];
 
   const getCurrentPath = () => {
     return window.location.pathname;
   };
 
-  const getLogo=(index)=>{
-   return `../assets/svgs/${index}.svg`
-  }
+ 
   return (
     <div className="sidebar-cont">
       <div className="logo-cont">
@@ -37,13 +35,15 @@ function Sidebar() {
           
           <li key={index}>
             <NavLink
-              to={link.link}>
-               {
- getCurrentPath() === link.link ?
-
- <Property1DashboardActive logo={link.logo} title={link.text} />:
- <Property1ReportsInactive logo={link.logo}title={link.text}/>
-               }
+              to={link.link} 
+              
+              
+              >
+                 {({ isActive}) => (
+isActive?
+<Property1DashboardActive logo={link.logo} title={link.text} />:
+<Property1ReportsInactive logo={link.logo}title={link.text}/>  )}
+              
                
             </NavLink>
           </li>
