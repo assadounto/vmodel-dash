@@ -25,7 +25,7 @@ height: 418px;
 flex-shrink: 1;
 justify-content: center; /* Horizontally center the content */
 align-items: center; 
-  background-color: $colors-w;
+  background-color:   var(--color-white);
   border-radius: 26px;
 box-shadow: 4px 4px 15px 0px rgba(170, 170, 170, 0.12);
 display: flex;

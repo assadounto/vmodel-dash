@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    background-color: $background-color;
-    font-family: "Montserrat"
+    background-color: var(--background-color);
+    font-family:  var(--font-montserrat) 
   }
   
