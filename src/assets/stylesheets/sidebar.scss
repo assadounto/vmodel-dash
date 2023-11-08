@@ -1,0 +1,32 @@
+.sidebar-cont{
+    background: #543B3A;
+box-shadow: 0px 4px 16px 0px rgba(202, 202, 202, 0.25);
+width: 278px;
+height: 100vh;
+flex-shrink: 0;
+}
+
+.sidebar-cont .logo-cont{
+   margin: 48px 92px 0 92px;
+
+}
+
+.active {
+    background-color: yellow;
+  }
+
+  .sidebar-cont ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .sidebar-cont li {
+    /* Style your list items as needed */
+    margin-bottom: 10px; /* Add space between list items */
+  }
+
+  .sidebar-cont a:visited {
+    color: inherit; /* Use the same color as the parent element */
+    /* Or set the color to your desired value, e.g., color: black; */
+  }

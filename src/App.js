@@ -1,7 +1,9 @@
-import "./App.scss";
+import AdminLayout from "./layout/AdminLayout";
+import PrivateRoute from "./layout/PrivateRoute";
 import "./assets/stylesheets/App.scss"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import LoginPage from "./pages/LoginPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
  
@@ -10,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<div>login</div>} />
+        <Route path="/" element={<LoginPage/>} />
         <Route
           path="/admin/*"
           element={
@@ -18,10 +20,10 @@ function App() {
             element={
               <AdminLayout>
                 <Routes>
-                  {/* <Route index element={<Dashboard/>} />
-                  <Route path="/vendors" element={<VendorPage/>} />
+                   <Route index element={<Dashboard/>} />
+                  {/* <Route path="/vendors" element={<VendorPage/>} />
                   <Route path="/reviews" element={<ReviewsPage/>} />
-                  <Route path="/users" element={<UsersPage/>} /> */}
+                  <Route path="/users" element={<UsersPage/>} />  */}
                 </Routes>
               </AdminLayout>
             }
