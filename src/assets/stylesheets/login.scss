@@ -101,6 +101,26 @@ width: 94px;
 height: 94px;
 margin: 3rem 0 0 3rem
 }
+
+/* Add these styles to your CSS file */
+.login-button {
+  margin-top: 1rem;
+  background-color: var(--background-color); /* Green background color */
+  color: var(--Main---303030, #303030); /* White text color */
+  padding: 10px 15px; /* Padding for better appearance */
+  border: none; /* Remove border */
+  width: 100px;
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+  font-family: "Montserrat";
+  font-weight: 600;
+
+}
+
+.login-button:hover {
+  border: 1px solid var(--strokes-05-e-7-e-8-e-9, #E7E8E9); /* Darker green color on hover */
+}
+
 /* Add any additional styles for the form elements, form container, etc. */
 @media (max-width: 768px) {
   .login-container {
