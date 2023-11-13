@@ -1,0 +1,106 @@
+.sidebar-cont{
+    background: #543B3A;
+box-shadow: 0px 4px 16px 0px rgba(202, 202, 202, 0.25);
+
+height: 100%;
+
+}
+
+.sidebar-cont .logo-cont{
+   margin: 48px 92px 50px 92px;
+
+}
+
+
+
+
+  .sidebar-cont ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .sidebar-cont li {
+    /* Style your list items as needed */
+    margin-bottom: 30px; /* Add space between list items */
+  }
+
+  .sidebar-cont a:visited {
+    color: inherit; /* Use the same color as the parent element */
+    /* Or set the color to your desired value, e.g., color: black; */
+  }
+
+  .carbonreport-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  .reports {
+    position: relative;
+    font-weight: 600;
+  }
+  .carbonreport-parent {
+    position: absolute;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; 
+    left: 34px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .property-1reports-inactive {
+    border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
+    background-color: var(--color-white);
+    width: 260px;
+    height: 70px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-dimgray-100);
+    font-family: var(--font-montserrat);
+  }
+
+  .radix-iconsdashboard {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard {
+    position: relative;
+    font-weight: 600;
+  }
+  .radix-iconsdashboard-parent {
+    position: absolute;
+    padding-top: 25px;
+    left: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .property-1dashboard-active-child {
+    top: 0;
+    left: -7px;
+    border-radius: 0 var(--br-5xs) var(--br-5xs) 0;
+    background-color: var(--color-white);
+    width: 20px;
+    height: 70px;
+  }
+  .property-1dashboard-active {
+    border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
+    background-color: var(--color-lightgray);
+    width: 260px;
+    height: 70px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-dimgray-100);
+    font-family: var(--font-montserrat);
+  }
+  

@@ -1,0 +1,133 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Set the height to the viewport height for full-page background */
+}
+
+
+
+.login-form {
+flex: 1;
+justify-content: center; /* Horizontally center the content */
+align-items: center; /* Vertically center the content */
+height: 100%;
+ 
+display: flex;
+}
+
+
+
+
+/* Add CSS for the login form component */
+.login-form form {
+  width: 561px;
+height: 418px;
+flex-shrink: 1;
+justify-content: center; /* Horizontally center the content */
+align-items: center; 
+  background-color:   var(--color-white);
+  border-radius: 26px;
+box-shadow: 4px 4px 15px 0px rgba(170, 170, 170, 0.12);
+display: flex;
+}
+
+.login-cont .login-label{
+
+color: #000;
+position: relative;
+top: -50px;
+font-family: "Montserrat";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+align-self: flex-start;
+}
+
+.login-cont .label{
+  color: var(--Main---303030, #303030);
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+align-self: flex-start;
+}
+
+.login-form .login-cont{
+  display: flex;
+width: 443px;
+height: 232px;
+padding: 10px 0px;
+flex-direction: column;
+ /* Horizontally center the content */
+align-items: center; 
+gap: 10px;
+flex-shrink: 0;
+}
+
+.form-field {
+  display: flex;
+  height: 48px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+border: 1px solid var(--strokes-05-e-7-e-8-e-9, #E7E8E9);
+  align-self: stretch; /* Adjust the margin as needed */
+}
+
+.lgbtn {
+  width: 100%;
+  height: 4rem; /* Adjust the height as needed for responsiveness */
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: #86D694;
+  border-color: #86D694;
+  margin-top: 20px;
+}
+.logo{
+  width: 94px;
+height: 94px;
+flex-shrink: 0;
+}
+
+.logo-cont{
+background-color: #FFF;;
+width: 94px;
+height: 94px;
+margin: 3rem 0 0 3rem
+}
+
+/* Add these styles to your CSS file */
+.login-button {
+  margin-top: 1rem;
+  background-color: var(--background-color); /* Green background color */
+  color: var(--Main---303030, #303030); /* White text color */
+  padding: 10px 15px; /* Padding for better appearance */
+  border: none; /* Remove border */
+  width: 100px;
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+  font-family: "Montserrat";
+  font-weight: 600;
+
+}
+
+.login-button:hover {
+  border: 1px solid var(--strokes-05-e-7-e-8-e-9, #E7E8E9); /* Darker green color on hover */
+}
+
+/* Add any additional styles for the form elements, form container, etc. */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .login-background, .login-form {
+    flex: auto; /* Make both items take equal space vertically */
+  }
+}
