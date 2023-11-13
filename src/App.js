@@ -1,23 +1,9 @@
-import AdminLayout from "./layout/AdminLayout";
-import PrivateRoute from "./layout/PrivateRoute";
-import "./assets/stylesheets/App.scss"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
-import Dashboard from "./pages/Dashboard";
-import { setuser } from "./redux/login";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
-import Users from "./pages/Users";
+import logo from './logo.svg';
+import './App.css';
+
 function App() {
-    const dispatch= useDispatch()
-
-   useEffect(()=>{
-    dispatch(setuser(JSON.parse(localStorage.getItem('user'))))
-   },[])
-
-  const isAuthenticated= localStorage.getItem('token') !== null;
- 
   return (
+
     <BrowserRouter>
       <Routes>
       <Route path="/login" element={<LoginPage/>} />
@@ -43,7 +29,7 @@ function App() {
       </Routes>
 
      
-    </BrowserRouter>
+
   );
 }
 
