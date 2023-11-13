@@ -1,50 +1,24 @@
-import AdminLayout from "./layout/AdminLayout";
-import PrivateRoute from "./layout/PrivateRoute";
-import "./assets/stylesheets/App.scss"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
-import Dashboard from "./pages/Dashboard";
-import { setuser } from "./redux/login";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
-import Users from "./pages/Users";
+import logo from './logo.svg';
+import './App.css';
+
 function App() {
-    const dispatch= useDispatch()
-
-   useEffect(()=>{
-    dispatch(setuser(JSON.parse(localStorage.getItem('user'))))
-   },[])
-
-  const isAuthenticated= localStorage.getItem('token') !== null;
- 
   return (
-    <BrowserRouter>
-      <Routes>
-      
-        <Route
-          path="/admin/*"
-          element={
-               
-                isAuthenticated? 
-               
-              <AdminLayout>
-                <Routes>
-                   <Route path="/dashboard" element={<Dashboard/>}/>
-                  <Route path="/users" element={<Users/>}/>
-                  <Route path="/services" element={<h3>swervices coming soon</h3>} />
-                  <Route path="/bookings" element={<h3>bookings coming soon</h3>} /> 
-                  <Route path="/coupons" element={<h3>coupons coming soon</h3>} /> 
-                  <Route path="/reports" element={<h3>reports coming soon</h3>} /> 
-                  <Route path="/ads" element={<h3>ads coming soon</h3>} /> 
-                </Routes>
-              </AdminLayout>:<LoginPage/>
-          }
-        />
-          <Route path="/login" element={<LoginPage/>} />
-      </Routes>
-
-     
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
