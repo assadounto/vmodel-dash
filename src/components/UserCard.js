@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 
-const UserCard = ({ imageCode, entityCode, propWidth }) => {
+const UserCard = ({ imageCode, entityCode, propWidth ,value}) => {
   const usersStyle = useMemo(() => {
     return {
       width: propWidth,
@@ -16,7 +16,7 @@ const UserCard = ({ imageCode, entityCode, propWidth }) => {
           <div className="users1" style={usersStyle}>
             {entityCode}
           </div>
-          <b className="b">147</b>
+          <b className="b">{value}</b>
         </div>
       </div>
     </div>
