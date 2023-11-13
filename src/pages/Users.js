@@ -33,24 +33,25 @@ const Users = () => {
           imageCode="/frame-31.svg"
           entityCode="Users"
           propWidth="90px"
-         // value={data?.data.total_number_of_coupons}
+         value={'147'}
         />
         <UserCard
           imageCode="/frame-32.svg"
           entityCode="Admins"
           propWidth="71px"
-          //value={data?.data.total_number_of_services}
+          value={"147"}
         />
         <UserCard
           imageCode="/frame-33.svg"
           entityCode="Banned"
           propWidth="71px"
-          //value={data?.data.total_number_of_jobs}
+          value={'37'}
         />
         </div>
-        {data && (
+        {/* {data && (
           <Table data={tableData} keys={keys} />
-        )}      </div>
+        )}     */}
+          </div>
     </>
   );
 };
