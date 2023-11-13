@@ -40,7 +40,6 @@ function App() {
               </AdminLayout>:<LoginPage/>
           }
         />
-          <Route path="/login" element={<LoginPage/>} />
       </Routes>
 
      
